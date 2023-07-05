@@ -1,24 +1,80 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import {
+  motion,
+  useInView,
+  useAnimation,
+  useMotionValueEvent,
+} from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import Main from "./components/Main";
+import About from "./components/About";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import main_bg from "./img/ski2.png";
+import banff from "./img/banf.png"
+import work_exp_bg from "./img/exp_bg.png"
+import WorkExp from "./components/WorkExp"
 function App() {
+  const paraRef = useRef();
+  const aboutRef = useRef(null);
+  const [isAboutInView, setIsAboutInView] = useState(false);
+  const [isSnapped, setIsSnapped] = useState(false);
+
+ 
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <Parallax pages={3} ref = {paraRef}>
+        <ParallaxLayer
+          speed={2}
+          factor={1.5}
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${main_bg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            backgroundPositionY: "10%", 
+          }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          factor={1}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 30%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1)), url(${banff})`,
+
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            
+          }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={2}
+          speed={1}
+          factor={1.5}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 30%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1)), url(${work_exp_bg})`,
+
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            
+          }}
+        ></ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.1} >
+          <Main />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1} speed={0.5}>
+          
+           {/* <div style={{ display: 'flex', justifyContent: 'center', height: '100%' }}> */}
+      <About />
+    {/* </div> */}
+         
+        
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0.5}>
+          <WorkExp/>
+        </ParallaxLayer>
+      </Parallax>
+    </body>
   );
 }
 
