@@ -14,6 +14,7 @@ import banff from "./img/banf.png";
 import work_exp_bg from "./img/exp_bg.png";
 import WorkExp from "./components/WorkExp";
 import Project from "./components/Projects";
+import Test from "./components/Test";
 function App() {
   const paraRef = useRef();
   const aboutRef = useRef(null);
@@ -78,7 +79,7 @@ function App() {
           <WorkExp />
         </ParallaxLayer>
         <ParallaxLayer offset={3.75} speed={0.5}>
-          <Project />
+          <Test />
         </ParallaxLayer>
       </Parallax>
     </body>
