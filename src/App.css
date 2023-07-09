@@ -2,7 +2,7 @@
 
 body {
   /* background-image: linear-gradient(to right, #A9F1DF, #FFBBBB); */
-  background-color: black;
+  background-color: black !important;
 }
 #about {
   height: 100vh;
