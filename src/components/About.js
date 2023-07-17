@@ -4,10 +4,11 @@ import profilePic from "../img/pic.png";
 import profilePic2 from "../img/grad_photo_fam.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 function About() {
   // const cardRef = useRef(null);
   const { ref: titleRef, inView: titleVisible } = useInView();
-  console.log(titleVisible);
+
   const { ref: cardRef, inView: cardVisible } = useInView();
   const [isFlipped, setIsFlipped] = useState(false);
 

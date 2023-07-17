@@ -8,6 +8,7 @@ import ahs from "../img/ahs.png"
 import npx from "../img/npx.png"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css"
+import { useInView } from "react-intersection-observer";
 function WorkExp() {
     let timelineElements = [
       {
@@ -51,12 +52,30 @@ function WorkExp() {
 
     },
   ]
-
+  const { ref: titleRef, inView: titleVisible } = useInView();
     return (
     <div className="work_exp">
-      <div className="titles">
+      <motion.h1
+        initial="hidden"
+        animate={titleVisible ? "visible" : "hidden"}
+        variants={{
+          hidden: {
+            scale: 3,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.4,
+            },
+          },
+        }}
+        ref={titleRef}
+        className="titles"
+      >
         Work Experience
-      </div>
+      </motion.h1>
         <VerticalTimeline>
           {timelineElements.map(element =>{
             return(

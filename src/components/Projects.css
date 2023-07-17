@@ -55,8 +55,8 @@
   }
   
   #tiles {
-    height: calc(80vh - 1px);
-    width: calc(80vw - 1px);
+    height: calc(70vh - 1px);
+    width: calc(60vw - 1px);
     position: relative;
     z-index: 2;
     
@@ -72,7 +72,7 @@
     transition: opacity 0.1s ease;}
   
   .tile:hover:before {
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(0, 0, 0,0.5);
   }
   
   .tile:before {
@@ -92,15 +92,16 @@
 
   }
   #tiles_container {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 85%;
-    height: calc(100vh - 1px);
-    overflow: auto; /* Add this to enable scrolling if needed */
+    width: 60%;
+    height:1500px;
+    box-shadow: 0 1.5px 5px rgba(0, 0, 0, 1);
+
+    overflow: hidden; /* Add this to enable scrolling if needed */
     background-color: rgba(0, 0, 0, 0.5);
   }
   #toggled_div {
-    height: calc(80vh - 1px);
-    width: calc(80vw - 1px);
+    height: 100%;
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,9 +109,9 @@
     align-items: center;
     justify-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+
     color: white;
-    
+    opacity: 0;
   }
   
   #toggled_div img {
@@ -126,3 +127,50 @@
   #toggled_div p {
     margin-bottom: 0;
   }
+  
+  .tile {
+    position: relative;
+  }
+  
+  .tile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+    font-size: 20px;
+  }
+  .github-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .round_image{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+  }
+
+  
+ 
