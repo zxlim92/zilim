@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/zilim/static/css/main.b8a28c8c.css",
+    "main.js": "/zilim/static/js/main.d4018ace.js",
+    "static/js/872.781dd7ce.chunk.js": "/zilim/static/js/872.781dd7ce.chunk.js",
+    "static/js/227.d22346e5.chunk.js": "/zilim/static/js/227.d22346e5.chunk.js",
+    "static/js/526.3f34fcf9.chunk.js": "/zilim/static/js/526.3f34fcf9.chunk.js",
+    "static/js/232.d2d6bac2.chunk.js": "/zilim/static/js/232.d2d6bac2.chunk.js",
+    "static/js/237.d1ec5035.chunk.js": "/zilim/static/js/237.d1ec5035.chunk.js",
+    "static/media/serial_com.png": "/zilim/static/media/serial_com.8c22ab69069682f7c403.png",
+    "static/media/skin_screen.png": "/zilim/static/media/skin_screen.fd436e7f91e8f2b1110d.png",
+    "static/media/banf.png": "/zilim/static/media/banf.400fbfd405a76f7f46bf.png",
+    "static/media/exp_bg.png": "/zilim/static/media/exp_bg.8c34f991e5e570ff3a10.png",
+    "static/media/ski2.png": "/zilim/static/media/ski2.68d402fb191cd6e52b32.png",
+    "static/media/face_rec.png": "/zilim/static/media/face_rec.bc8876f6149cca00398c.png",
+    "static/media/chat.png": "/zilim/static/media/chat.1bbf935052dfc2baf0c7.png",
+    "static/media/email.png": "/zilim/static/media/email.1e920dda5945f656a686.png",
+    "static/media/qrun.png": "/zilim/static/media/qrun.86218a88293148cbbe92.png",
+    "static/media/grad_photo_fam.png": "/zilim/static/media/grad_photo_fam.922ae2aca09662cada7a.png",
+    "static/media/atc.jpg": "/zilim/static/media/atc.4c06c00faa636fce03a7.jpg",
+    "static/media/logo.png": "/zilim/static/media/logo.5e4999ade6613292ddf2.png",
+    "static/media/pic.png": "/zilim/static/media/pic.787436bd3e7150dc3a61.png",
+    "static/media/npx.png": "/zilim/static/media/npx.d725043febe8c5bafe48.png",
+    "static/media/ms2.png": "/zilim/static/media/ms2.aea70ea67b342ba977fb.png",
+    "static/media/proj3.png": "/zilim/static/media/proj3.cca1b71ec2a6c10950a7.png",
+    "static/media/SNAKES.png": "/zilim/static/media/SNAKES.f6f0186bb228250101bc.png",
+    "index.html": "/zilim/index.html",
+    "main.b8a28c8c.css.map": "/zilim/static/css/main.b8a28c8c.css.map",
+    "main.d4018ace.js.map": "/zilim/static/js/main.d4018ace.js.map",
+    "872.781dd7ce.chunk.js.map": "/zilim/static/js/872.781dd7ce.chunk.js.map",
+    "227.d22346e5.chunk.js.map": "/zilim/static/js/227.d22346e5.chunk.js.map",
+    "526.3f34fcf9.chunk.js.map": "/zilim/static/js/526.3f34fcf9.chunk.js.map",
+    "232.d2d6bac2.chunk.js.map": "/zilim/static/js/232.d2d6bac2.chunk.js.map",
+    "237.d1ec5035.chunk.js.map": "/zilim/static/js/237.d1ec5035.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8a28c8c.css",
+    "static/js/main.d4018ace.js"
+  ]
+}
