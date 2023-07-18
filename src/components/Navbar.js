@@ -19,7 +19,7 @@ const NavBar = (props) => {
           <li onClick={() => navigate(4)}><a >Projects</a></li>
         </ul>
       </nav>
-      <a className="cta" href="#contact">
+      <a className="cta" >
         <button onClick={() => navigate(5)}>Contact</button>
       </a>
     </header>

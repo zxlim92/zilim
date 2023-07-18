@@ -20,6 +20,7 @@ button {
 .nav__links {
     display: inline-block;
     list-style: none;
+    cursor: pointer;
 }
 
 .nav__links li {
@@ -58,3 +59,4 @@ button {
     cursor: pointer;
     transition: color 0.3s ease 0s;
 }
+
